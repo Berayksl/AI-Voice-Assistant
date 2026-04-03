@@ -9,6 +9,7 @@ A fully local, GPU-accelerated voice assistant pipeline built for low-latency, r
 - 🧠 **State-of-the-art ASR** with faster-whisper (Whisper Medium, GPU-accelerated)
 - 💬 **Local LLM inference** via llama.cpp (Llama 3.2 3B, Q4_K_M quantization)
 - 🔊 **Voice cloning TTS** zero-shot voice cloning from a 5-sec clip
+- 🎛️ **Voice selection GUI** — graphical interface at startup to browse, record, or skip voice cloning — no code changes needed
 - 🖥️ **Fully local** — no cloud APIs, no internet required after setup
 
 ---
@@ -42,7 +43,7 @@ A fully local, GPU-accelerated voice assistant pipeline built for low-latency, r
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/Berayksl/AI-Voice-Assistant.git
+git clone https://github.com/Berayksl/CloneSpeak-Voice-Assistant.git
 cd voice-assistant
 ```
 
@@ -115,6 +116,13 @@ Downloaded automatically from Hugging Face on first run (`ResembleAI/chatterbox-
 ```bash
 python VoiceChatBot.py
 ```
+When the assistant starts, a **voice selection GUI** launches automatically before listening begins. It gives you three options:
+
+- **Browse for a file** — select any `.wav` clip from your file system to use as the cloning reference
+- **Record your voice** — record directly in the UI; a live timer shows duration and the system requires at least 3 seconds for reliable cloning. The recording is saved automatically to `voice_recordings/`
+- **Use default voice** — close the window or click confirm without selecting anything to fall back to Chatterbox's default voice
+
+Once you confirm, the GUI closes and the assistant starts listening immediately.
 
 - Speak after the `🎙️ Listening...` prompt appears
 - The assistant will transcribe, think, and respond in a cloned voice
