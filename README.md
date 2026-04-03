@@ -128,14 +128,6 @@ Once you confirm, the GUI closes and the assistant starts listening immediately.
 - The assistant will transcribe, think, and respond in a cloned voice
 - Press `Ctrl+C` to exit
 
-### Optional: set your voice cloning reference
-
-Place a clean 5–30 second WAV recording of the target voice in `clone_audio/` and update the path in `pipeline.py`:
-
-```python
-TTS_REF_AUDIO = "./clone_audio/your_voice_sample.wav"
-```
-
 ---
 
 ## 🧪 Testing Individual Modules
