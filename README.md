@@ -80,13 +80,13 @@ CMAKE_ARGS="-DGGML_CUDA=on" pip install llama-cpp-python --upgrade --force-reins
 pip install -r requirements.txt
 ```
 
-### 6. Install ffmpeg (required by pydub for audio export)
+<!-- ### 6. Install ffmpeg (required by pydub for audio export)
 
 ```bash
 conda install ffmpeg -c conda-forge
 ```
 
----
+--- -->
 
 ## 📥 Downloading Models
 
