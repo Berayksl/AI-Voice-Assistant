@@ -1,9 +1,6 @@
-# 🎙️ VoiceAssistant — Real-Time AI Voice Q&A System
+# 🎙️ CloneSpeak — Real-Time AI Voice Assistant
 
-A fully local, GPU-accelerated voice assistant pipeline built for low-latency, real-time interaction. Ask questions out loud — get spoken answers back, in a cloned voice.
-
-**Pipeline:** `Microphone → VAD → ASR → LLM → TTS → Speaker`
-
+A fully local, GPU-accelerated voice assistant pipeline built for low-latency, real-time interaction. Ask questions out loud and get spoken answers back, in a cloned voice!
 ---
 
 ## ✨ Features
@@ -11,8 +8,7 @@ A fully local, GPU-accelerated voice assistant pipeline built for low-latency, r
 - 🎤 **Automatic speech detection** via Silero VAD (no push-to-talk)
 - 🧠 **State-of-the-art ASR** with faster-whisper (Whisper Medium, GPU-accelerated)
 - 💬 **Local LLM inference** via llama.cpp (Llama 3.2 3B, Q4_K_M quantization)
-- 🔊 **Voice cloning TTS** with Chatterbox Turbo (zero-shot voice cloning from a 5-sec clip)
-- ⚡ **Streaming pipeline** — TTS starts speaking sentence-by-sentence while LLM is still generating
+- 🔊 **Voice cloning TTS** zero-shot voice cloning from a 5-sec clip
 - 🖥️ **Fully local** — no cloud APIs, no internet required after setup
 
 ---
@@ -147,7 +143,7 @@ python llm_test.py
 python tts_test.py
 ```
 
-## 🔧 Configuration
+<!-- ## 🔧 Configuration
 
 All key parameters are at the top of `pipeline.py`:
 
@@ -160,9 +156,9 @@ All key parameters are at the top of `pipeline.py`:
 | `TTS_EXAGGERATION` | `0.5` | Voice expressiveness (0 = neutral, 1 = dramatic) |
 | `TTS_REF_AUDIO` | `./clone_audio/...` | Path to voice cloning reference audio |
 
----
+--- -->
 
-## 🧩 Tech Stack
+<!-- ## 🧩 Tech Stack
 
 | Component | Model / Library |
 |---|---|
@@ -170,7 +166,7 @@ All key parameters are at the top of `pipeline.py`:
 | VAD | [Silero VAD](https://github.com/snakers4/silero-vad) |
 | LLM | [Llama 3.2 3B Instruct](https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct) via [llama.cpp](https://github.com/ggerganov/llama.cpp) |
 | TTS | [Chatterbox Turbo](https://github.com/resemble-ai/chatterbox) by Resemble AI |
-| Audio I/O | sounddevice, soundfile, pydub |
+| Audio I/O | sounddevice, soundfile, pydub | -->
 
 ---
 
